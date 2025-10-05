@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!-- سيتم التحكم في سمات اللغة والاتجاه عبر JavaScript -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- وسوم SEO الوصفية -->
+    <title>L'Espoir Spa Marrakech – Relaxation, Wellness & Beauty</title>
+    <meta name="description" content="Discover serenity at L'Espoir Spa Marrakech. We offer professional massages, traditional hammam, and beauty treatments. Book your wellness escape.">
+    <meta name="keywords" content="spa Marrakech, wellness Marrakech, massage Marrakech, hammam, beauty spa">
+
+    <!-- خطوط جوجل (Lora, Montserrat, و Cairo للغة العربية) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <!-- ملف CSS الرئيسي -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER (الشريط العلوي) ==================== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">L’Espoir Spa</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link" data-key="nav_home">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link" data-key="nav_about">About</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link" data-key="nav_services">Services</a></li>
+                    <li class="nav__item"><a href="#booking" class="nav__link" data-key="nav_booking">Booking</a></li>
+                    <li class="nav__item"><a href="#gallery" class="nav__link" data-key="nav_gallery">Gallery</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link" data-key="nav_contact">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class="fas fa-times"></i></div>
+            </div>
+
+            <!-- محول اللغات -->
+            <div class="lang__switcher">
+                <a href="#" class="lang__link" data-lang="en">EN</a>
+                <a href="#" class="lang__link" data-lang="fr">FR</a>
+                <a href="#" class="lang__link" data-lang="ar">AR</a>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- ==================== HOME (الصفحة الرئيسية) ==================== -->
+         <section class="home" id="home">
+            <div class="home__container">
+            <div class="home__data">
+                    
+                    <h1 class="home__title" data-key="hero_title">L’Espoir Spa Marrakech</h1>
+                    <p class="home__subtitle" data-key="hero_subtitle">Relaxation, Wellness & Beauty</p>
+                     <a href="#booking" class="button" data-key="hero_button">Book an Appointment</a>
+        </div>
+    
+            </div>
+        </section>
+
+        <!-- ==================== ABOUT US (من نحن) ==================== -->
+        <section class="section about" id="about">
+            <div class="about__container container grid">
+                <div class="about__image">
+                    <img src="massage f.jpg" alt="L'Espoir Spa interior">
+                </div>
+                <div class="about__data">
+                    <h2 class="section__title" data-key="about_title">Your Sanctuary of Serenity</h2>
+                    <p class="about__description" data-key="about_desc">
+                        At L'Espoir Spa, we believe in the power of holistic well-being. Our philosophy is rooted in blending ancient Moroccan rituals with modern therapeutic techniques. We are dedicated to providing a tranquil escape where our professional team uses only the finest natural ingredients to rejuvenate your body, mind, and spirit.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SERVICES (خدماتنا) ==================== -->
+        <section class="section services" id="services">
+            <h2 class="section__title" data-key="services_title">Our Treatments</h2>
+            <div class="services__container container grid">
+                <div class="service__card">
+                    <img src="Massages Relaxants.jpg" alt="Relaxing Massage" class="service__img">
+                    <h3 class="service__name" data-key="service1_name">Relaxing Massages</h3>
+                    <p class="service__description" data-key="service1_desc">From deep tissue to aromatherapy, our massages are designed to release tension and restore balance.</p>
+                    <span class="service__price" data-key="service1_price">Starting from 400 MAD</span>
+                </div>
+                <div class="service__card">
+                    <img src="imge.jpg" alt="Traditional Hammam" class="service__img">
+                    <h3 class="service__name" data-key="service2_name">Traditional Hammam</h3>
+                    <p class="service__description" data-key="service2_desc">Experience a purifying Moroccan ritual with black soap exfoliation and a ghassoul clay mask.</p>
+                    <span class="service__price" data-key="service2_price">Starting from 350 MAD</span>
+                </div>
+                <div class="service__card">
+                    <img src="Rejuvenating Facials.jpg" alt="Rejuvenating Facial" class="service__img">
+                    <h3 class="service__name" data-key="service3_name">Rejuvenating Facials</h3>
+                    <p class="service__description" data-key="service3_desc">Customized facials using natural products to leave your skin glowing and refreshed.</p>
+                    <span class="service__price" data-key="service3_price">Starting from 450 MAD</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== BOOKING (الحجز) ==================== -->
+        <section class="section booking" id="booking">
+            <h2 class="section__title" data-key="booking_title">Book Your Escape</h2>
+            <div class="booking__container container grid">
+                <form action="#" class="booking__form">
+                    <div class="form__group"><input type="text" data-key-placeholder="form_name_placeholder" placeholder="Your Name" required></div>
+                    <div class="form__group"><input type="email" data-key-placeholder="form_contact_placeholder" placeholder="Email or Phone" required></div>
+                    <div class="form__group">
+                        <select required id="service-select">
+                            <option value="" disabled selected data-key="form_service_placeholder">Choose a Service</option>
+                            <option value="massage" data-key="form_service_massage">Massage</option>
+                            <option value="hammam" data-key="form_service_hammam">Hammam</option>
+                            <option value="facial" data-key="form_service_facial">Facial</option>
+                            <option value="package" data-key="form_service_package">Package</option>
+                        </select>
+                    </div>
+                    <div class="form__group"><input type="date" required></div>
+                    <div class="form__group"><input type="time" required></div>
+                    <button type="submit" class="button" data-key="form_button">Send Request</button>
+                </form>
+                <div class="booking__contact">
+                    <p data-key="booking_contact_desc">For instant booking or inquiries, feel free to call us or send a message on WhatsApp.</p>
+                    <a href="https://wa.me/212661266960" class="button button--flex" target="_blank">
+                        <i class="fab fa-whatsapp"></i> <span data-key="booking_whatsapp_btn">Book on WhatsApp</span>
+                    </a>
+                    <a href="tel:+212661266960" class="button button--ghost" data-key="booking_call_btn">Call +212 6 61 26 69 60</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== GALLERY (معرض الصور) ==================== -->
+        <section class="section gallery" id="gallery">
+            <h2 class="section__title" data-key="gallery_title">Our Ambiance</h2>
+            <div class="gallery__container container">
+                <div class="gallery__item"><img src="Spa treatment room.jpeg" alt="Spa treatment room"></div>
+                <div class="gallery__item"><img src="room.jpeg" alt="Relaxation area.jpeg"></div>
+                <div class="gallery__item"><img src="Hammam interior.webp" alt="Hammam interior.jpg"></div>
+                <div class="gallery__item"><img src="candles.jpg" alt="candles.jpg"></div>
+                <div class="gallery__item"><img src="Spa details.jpg" alt="Spa details.jpg"></div>
+                <div class="gallery__item"><img src="Relaxation area.jpeg" alt="Reception area"></div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT (اتصل بنا) ==================== -->
+        <section class="section contact" id="contact">
+            <h2 class="section__title" data-key="contact_title">Visit Us</h2>
+            <div class="contact__container container grid">
+                <div class="contact__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.310124682054!2d-8.030368024227914!3d31.62646694200424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee9ed8a83979%3A0x27f5c78f1a075538!2sL&#39;espoir%20Spa!5e0!3m2!1sen!2sma!4v1716908842186!5m2!1sen!2sma" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact__details">
+                    <h3>L'Espoir Spa Marrakech</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 26, Rue de la Liberté, Marrakech, Morocco</p>
+                    <p><i class="fas fa-phone"></i> +212 6 61 26 69 60</p>
+                    <p><i class="fas fa-envelope"></i> contact@lespoirspa.com</p>
+                    <p><i class="fas fa-clock"></i> Mon - Sun: 10:00 AM - 9:00 PM</p>
+                    <div class="contact__social">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER (الجزء السفلي) ==================== -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__copy">&copy; 2025 L'Espoir Spa Marrakech. All Rights Reserved. | <a href="https://lespoirspa.com">lespoirspa.com</a></p>
+        </div>
+    </footer>
+    
+    <!-- مكتبة Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- ملف JS الرئيسي -->
+    <script src="script.js"></script>
+</body>
+</html>
